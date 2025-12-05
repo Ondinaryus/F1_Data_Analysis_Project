@@ -1,13 +1,3 @@
-Elbette!
-Aşağıda **bu projeye tamamen uygun**,
-**profesyonel**,
-**açık**,
-**LinkedIn/Portfolio seviyesinde kaliteli** bir README metni bulacaksın.
-
-Sadece kopyalayıp `README.md` içerisine yapıştırman yeterli.
-
----
-
 # 📘 **F1 Data Analysis Project**
 
 Bu proje, Formula 1 yarışlarına ait çok kapsamlı bir veri setinin analiz edilmesi, temizlenmesi ve görselleştirilmesi üzerine kurulmuştur. Hammadde veriler (14 adet CSV dosyası), Kaggle üzerinden alınmıştır. Proje boyunca veri temizleme, keşifsel analiz (EDA) ve dashboard oluşturma adımları uygulanmıştır.
@@ -157,14 +147,3 @@ Bu proje eğitim ve analiz amaçlıdır.
 Veri seti Kaggle üzerinden sağlanmıştır.
 
 ---
-
-Eğer istersen bu README’yi:
-
-* Daha görselli
-* Daha teknik
-* Daha hikâyeleştirilmiş
-* Daha kısa/minimal
-
-formatlarından biriyle yeniden tasarlayabilirim.
-
-Sana uygun versiyonu birlikte çıkaralım!
