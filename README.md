@@ -5,14 +5,14 @@
 # 🇬🇧 **F1 Data Analysis Project**
 
 This project focuses on the analysis, cleaning, and visualization of a comprehensive Formula 1 dataset obtained from Kaggle.  
-A total of 14 raw CSV files were processed to build a clean, analysis-ready data pipeline used for exploratory analysis, KPI modeling, and dashboard creation.
+A total of 14 raw CSV files were processed to build a clean, analysis-ready data pipeline used for exploratory analysis, KPI modeling, machine learning, and dashboard creation.
 
 ---
 
 ## 🏎️ **Project Overview**
 
-The goal of this project is to understand the multi-layered structure of Formula 1 data and build a reliable model for analytical use.  
-Categories of data included:
+The primary objective of this project is to understand the multi-layered structure of Formula 1 data and build reliable models for analytics and prediction.  
+The dataset includes:
 
 - Driver details  
 - Constructor (team) details  
@@ -20,12 +20,12 @@ Categories of data included:
 - Circuit information  
 - Race results  
 - Sprint results  
-- Qualifying results  
-- Lap timings  
+- Qualifying sessions  
+- Lap times  
 - Pit stop records  
 - Season summaries  
 - Driver & constructor standings  
-- Race status codes (including DNF reasons)
+- Race status and DNF descriptions  
 
 ---
 
@@ -35,15 +35,15 @@ Categories of data included:
 F1_Data_Analysis_Project/
 │
 ├── data/
-│   ├── raw/            # 14 raw CSV files from Kaggle
-│   └── processed/      # Cleaned clean_*.csv files
+│   ├── raw/                  
+│   └── processed/            
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb      # Exploratory Data Analysis (EDA)
-│   ├── 02_data_cleaning.ipynb         # Data cleaning pipeline
-│   └── 03_(model_to_be_added).ipynb   # KPI / analytical model (to be added)
+│   ├── 01_data_exploration.ipynb      
+│   ├── 02_data_cleaning.ipynb         
+│   └── 03_F1_race_prediction.ipynb    
 │
-├── formula1_page_1.png   # Dashboard preview image
+├── formula1_page_1.png   
 └── README.md
 ```
 
@@ -51,88 +51,103 @@ F1_Data_Analysis_Project/
 
 ## 🧪 **01 — Exploratory Data Analysis (EDA)**
 
-During the EDA phase:
+Key steps performed:
 
-- Inspected row/column structures  
-- Identified missing values (including `\N`)  
-- Analyzed data types  
-- Produced initial visual insights (driver nationality trends, races per season, grid vs finish relationships)  
-- Identified all data issues to be addressed during cleaning  
-
-This phase provided the foundation for constructing a consistent analytical dataset.
+- Structural inspection of all tables  
+- Detection of missing values (`\N`)  
+- Data type verification  
+- Basic visual exploration (nationality distribution, races per year, grid vs finish trends)  
+- Identification of required transformations for cleaning  
 
 ---
 
 ## 🧹 **02 — Data Cleaning**
 
-In this phase, an analysis-ready dataset was created. Steps included:
+Major transformations included:
 
-- Converting `\N` to `NaN`  
-- Converting date and time columns to proper datetime formats  
-- Converting numerical fields to numeric types  
-- Dropping unnecessary columns (e.g., `url`)  
-- Creating new fields such as `fullName`  
-- Merging race & sprint results with race status explanations  
-- Exporting every cleaned file into `data/processed/` as **clean_*.csv**
-
-This pipeline ensures a clean, reliable data foundation for KPIs, dashboards, and further analysis.
+- Converting `\N` → `NaN`  
+- Fixing datetime formats  
+- Numeric conversions  
+- Removing irrelevant fields (such as URL fields)  
+- Adding enriched features (e.g., `fullName`)  
+- Merging race results with race status to include DNF details  
+- Exporting all cleaned files as **clean_*.csv** into `data/processed/`
 
 ---
 
-## 🧩 **03 — (Model to Be Added)**
+## 🧩 **03 — F1 Race Prediction Model**
 
-This section will describe the analytical model produced in `03_(model_to_be_added).ipynb`.
+The notebook **03_F1_race_prediction.ipynb** introduces a machine learning model designed to estimate the win probability of each driver before a race.
 
-**Placeholder:**
+### 🔧 **Model Summary**
+The model uses:
 
-> This notebook will generate KPI tables and analytical datasets used for dashboard visualizations.  
-> It will include transformations, aggregations, and additional derived metrics required by Looker Studio.  
-> Once the model is finalized, detailed explanations and examples will be added here.
+- Starting grid position  
+- Team performance metrics  
+- Driver historical statistics  
+- Circuit-based tendencies  
+- Season progression  
+
+to produce a win probability prediction for upcoming races.
+
+### 📈 **Example Prediction Output**
+
+Based on data from the **2024 Season, Race 12**, the model generated the following **2025 Abu Dhabi GP predictions**:
+
+| driver_name     | team_name | grid | win_probability |
+|-----------------|-----------|------|-----------------|
+| Lewis Hamilton  | Mercedes  | 2    | 48.5%           |
+| George Russell  | Mercedes  | 1    | 45.0%           |
+| Max Verstappen  | Red Bull  | 4    | 43.7%           |
+| Lando Norris    | McLaren   | 3    | 36.4%           |
+| Oscar Piastri   | McLaren   | 5    | 35.5%           |
+
+**🏁 Model’s predicted favorite:** *Lewis Hamilton (Mercedes)*
+
+This model will continue to evolve with additional features and improved training pipelines.
 
 ---
 
 ## 📊 **Dashboard (Looker Studio)**
 
 This project includes a multi-page interactive dashboard built in Looker Studio.  
-All calculations, KPIs, and transformations were implemented using **Looker Studio formulas** and **BigQuery logic**.
+All KPIs and calculations were implemented using Looker Studio formulas and BigQuery logic.
 
-The dashboard includes several analytical pages such as:
+Dashboard pages include:
 
-- **Home Overview:** Global KPIs, constructor wins, DNF distribution, race locations  
-- **Lap Performance:** Driver & team lap-time comparisons, consistency insights  
-- **Excitement Analysis:** Race dynamics, position changes, action metrics  
-- **Wins by Grid Position:** Grid vs final result relationships  
-- **Team & Driver Insights:** Season trends, reliability, performance metrics  
+- **Home Overview**  
+- **Lap Performance**  
+- **Excitement Analysis**  
+- **Wins by Grid Position**  
+- **Team & Driver Insights**  
 
-Users can interactively filter the data by **year, driver, constructor, country, and Grand Prix**, allowing seamless exploration across the entire report.
+Users can filter data by **year, driver, constructor, country, and Grand Prix**, enabling fully interactive exploration.
 
 *A preview of the first dashboard page is shown below.  
 These visuals represent only part of the full report — you can visit the Looker Studio link to explore the complete dashboard.*
 
-```
-![Dashboard Preview](formula1_page_1.png)
-```
+![Dashboard Preview](./formula1_page_1.png)
 
 ### 🔗 **Looker Studio Dashboard Link**
 
-👉 https://lookerstudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_xvx43nx1xd
+👉 https://lookerstudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_0cosqdqzxd
 
 ---
 
 ## 🛠️ **Technologies Used**
 
-- **Python** (pandas, numpy, matplotlib, seaborn)  
-- **Jupyter Notebook**  
-- **Looker Studio (Google Data Studio)**  
-- **BigQuery**  
-- **Git & GitHub**  
-- **Virtual Environment (venv)**  
+- Python (pandas, numpy, matplotlib, seaborn)  
+- Jupyter Notebook  
+- Looker Studio  
+- BigQuery  
+- Git & GitHub  
+- Virtual Environment (venv)
 
 ---
 
 ## 🚀 **Project Purpose**
 
-This project aims to develop skills in data cleaning, analytics, and visualization by building an end-to-end pipeline using a large-scale Formula 1 dataset — ultimately enabling meaningful insights into the competitive landscape of F1 racing.
+This project aims to build an end-to-end data analysis and prediction pipeline while uncovering meaningful insights into the competitive ecosystem of Formula 1 racing.
 
 ---
 
@@ -140,28 +155,15 @@ This project aims to develop skills in data cleaning, analytics, and visualizati
 
 # 🇹🇷 **F1 Veri Analizi Projesi**
 
-Bu proje, Kaggle üzerinden elde edilen kapsamlı Formula 1 veri setinin analiz edilmesi, temizlenmesi ve görselleştirilmesi üzerine kurulmuştur.  
-Toplam 14 ham CSV dosyası işlenerek keşifsel analiz, KPI modelleme ve dashboard oluşturma için temiz bir veri modeli elde edilmiştir.
+Bu proje, Kaggle’dan elde edilen kapsamlı Formula 1 veri setinin analiz edilmesi, temizlenmesi, modelleme ve görselleştirilmesi üzerine kurulmuştur.  
+14 adet ham CSV dosyası işlenerek analiz-hazır bir veri modeli oluşturulmuştur.
 
 ---
 
 ## 🏎️ **Proje İçeriği**
 
-Amaç, Formula 1 verisinin çok katmanlı yapısını anlamak ve analiz için güvenilir bir veri modeli oluşturmaktır.  
-Veri kategorileri:
-
-- Sürücü detayları  
-- Takım detayları  
-- Yarış takvimi  
-- Pist bilgileri  
-- Yarış sonuçları  
-- Sprint sonuçları  
-- Sıralama turları sonuçları  
-- Tur zamanları  
-- Pit stop kayıtları  
-- Sezon özetleri  
-- Sürücü & takım sıralamaları  
-- Yarış durum kodları (DNF nedenleri dahil)
+Projenin amacı, F1 verisinin karmaşık yapısını anlamak ve güvenilir analitik / tahmin modelleri geliştirmektir.  
+Veri seti; sürücüler, takımlar, yarış takvimi, pistler, tur zamanları, pit stoplar, sıralamalar ve DNF açıklamalarını içerir.
 
 ---
 
@@ -171,15 +173,15 @@ Veri kategorileri:
 F1_Data_Analysis_Project/
 │
 ├── data/
-│   ├── raw/            # Kaggle'dan indirilen 14 ham CSV
-│   └── processed/      # Temizlenmiş clean_*.csv dosyaları
+│   ├── raw/            
+│   └── processed/      
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb      # EDA aşaması
-│   ├── 02_data_cleaning.ipynb         # Temizlik pipeline'ı
-│   └── 03_(eklenecek model).ipynb     # KPI / analiz modeli (eklenecek)
+│   ├── 01_data_exploration.ipynb      
+│   ├── 02_data_cleaning.ipynb         
+│   └── 03_F1_race_prediction.ipynb    
 │
-├── formula1_page_1.png   # Dashboard ilk sayfa görseli
+├── formula1_page_1.png
 └── README.md
 ```
 
@@ -189,78 +191,81 @@ F1_Data_Analysis_Project/
 
 Bu aşamada:
 
-- Tabloların satır/sütun yapıları incelendi  
-- Eksik değerler (`\N`) belirlendi  
+- Tabloların yapısı incelendi  
+- Eksik değerler tespit edildi  
 - Kolon tipleri analiz edildi  
-- İlk görsel analizler üretildi (milliyet dağılımı, sezonlara göre yarış sayısı, grid vs finish ilişkisi)  
-- Temizlik aşamasında yapılacak dönüşümler planlandı  
+- İlk görselleştirmeler oluşturuldu  
+- Temizlik aşaması için gereksinimler çıkarıldı  
 
 ---
 
 ## 🧹 **02 — Data Cleaning**
 
-Bu aşamada analiz için kullanılabilir, tutarlı bir veri yapısı oluşturulmuştur. Yapılan işlemler:
+Başlıca yapılan işlemler:
 
 - `\N` → `NaN` dönüşümü  
-- Tarih kolonlarının datetime formatına çevrilmesi  
-- Sayısal kolonların numeric formata dönüştürülmesi  
-- Gereksiz kolonların kaldırılması  
-- `fullName` gibi ek kolonların oluşturulması  
-- Yarış sonuçlarının yarış durum kodları ile birleştirilmesi  
-- Tüm temiz dosyaların **clean_*.csv** olarak `data/processed/` altına kaydedilmesi  
+- Tarih kolonlarının formatlanması  
+- Sayısal alanların düzenlenmesi  
+- Gereksiz kolonların silinmesi  
+- Yeni özelliklerin oluşturulması  
+- Yarış sonuçlarının DNF açıklamalarıyla zenginleştirilmesi  
+- Temiz verinin `clean_*.csv` formatında kaydedilmesi  
 
 ---
 
-## 🧩 **03 — (Eklenecek Model)**
+## 🧩 **03 — F1 Yarış Tahmin Modeli**
 
-Bu bölümde, `03_(eklenecek model).ipynb` içinde oluşturulacak KPI ve analiz modellerinin açıklaması yer alacaktır.
+`03_F1_race_prediction.ipynb` notebook'u, yaklaşan yarışlar için sürücü galibiyet olasılıklarını hesaplayan bir makine öğrenimi modeli içermektedir.
 
-Eklenince buraya:
+### 🔧 **Model Özeti**
+Model şu bilgileri kullanır:
 
-- Üretilen metrikler  
-- Kullanılan dönüşümler  
-- Oluşturulan veri tabloları  
-- Dashboard bağlantıları  
+- Grid pozisyonu  
+- Takım performansı  
+- Sürücü geçmiş başarıları  
+- Pist eğilimleri  
+- Sezonun ilerleyişi  
 
-eklenecektir.
+### 📈 **Örnek Çıktı**
+
+**Baz alınan veri:** 2024 Sezonu, 12. Yarış  
+**Tahmin edilen yarış:** 2025 Abu Dhabi GP
+
+| driver_name     | team_name | grid | win_probability |
+|-----------------|-----------|------|-----------------|
+| Lewis Hamilton  | Mercedes  | 2    | 48.5%           |
+| George Russell  | Mercedes  | 1    | 45.0%           |
+| Max Verstappen  | Red Bull  | 4    | 43.7%           |
+| Lando Norris    | McLaren   | 3    | 36.4%           |
+| Oscar Piastri   | McLaren   | 5    | 35.5%           |
+
+**🏁 Model Tahmini Favori:** *Lewis Hamilton (Mercedes)*
 
 ---
 
 ## 📊 **Dashboard (Looker Studio)**
 
-Bu proje kapsamında Looker Studio üzerinde çok sayfalı interaktif bir dashboard oluşturulmuştur.  
-Dashboarddaki tüm hesaplamalar, metrikler ve dönüşümler **Looker Studio formülleri** ve **BigQuery sorguları** ile yapılmıştır.
+Proje kapsamında Looker Studio üzerinde çok sayfalı interaktif bir dashboard oluşturulmuştur.  
+Tüm hesaplamalar Looker Studio formülleri ve BigQuery üzerinde yapılmıştır.
 
-Dashboard; genel bakış, tur performansı, heyecan analizleri, grid pozisyonu etkisi, takım–sürücü analizleri gibi çeşitli sayfalardan oluşmaktadır.  
-Dashboard; **yıl, sürücü, takım, ülke ve Grand Prix** filtreleriyle tamamen interaktif çalışır.
+![Dashboard Görseli](./formula1_page_1.png)
 
-*Aşağıdaki görsel dashboard’un sadece ilk sayfasını göstermektedir.  
-Raporun tamamını incelemek için Looker Studio bağlantısını ziyaret edebilirsiniz.*
-
-```
-![Dashboard Görseli](formula1_page_1.png)
-```
-
-### 🔗 **Looker Studio Dashboard Bağlantısı**
-
-👉 https://lookerstudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_xvx43nx1xd
+🔗 Dashboard bağlantısı:  
+👉 https://lookerstudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_0cosqdqzxd
 
 ---
 
 ## 🛠️ **Kullanılan Teknolojiler**
 
-- **Python** (pandas, numpy, matplotlib, seaborn)  
-- **Jupyter Notebook**  
-- **Looker Studio**  
-- **BigQuery**  
-- **Git & GitHub**  
-- **Virtual Environment (venv)**  
+- Python  
+- Jupyter Notebook  
+- Looker Studio  
+- BigQuery  
+- Git & GitHub  
+- venv
 
 ---
 
 ## 🚀 **Projenin Amacı**
 
-Bu proje, veri temizleme, analiz ve görselleştirme becerilerini geliştirmek;  
-büyük F1 veri seti üzerinde uçtan uca bir veri pipeline'ı kurmak  
-ve F1 dünyasının rekabetçi dinamiklerini anlamak amacıyla hazırlanmıştır.
-
+Bu proje, uçtan uca bir veri analizi ve tahmin pipeline'ı kurarak F1 dünyasının rekabet dinamiklerini veri odaklı bir bakışla incelemeyi hedefler.
