@@ -130,7 +130,7 @@ These visuals represent only part of the full report — you can visit the Looke
 
 ### 🔗 **Looker Studio Dashboard Link**
 
-👉 https://lookerstudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_0cosqdqzxd
+👉 https://lookerstudio.google.com/s/uG-Xa6VAitw
 
 ---
 
@@ -251,7 +251,7 @@ Tüm hesaplamalar Looker Studio formülleri ve BigQuery üzerinde yapılmıştı
 ![Dashboard Görseli](./formula1_page_1.png)
 
 🔗 Dashboard bağlantısı:  
-👉 https://lookerstudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_0cosqdqzxd
+👉 https://lookerstudio.google.com/s/uG-Xa6VAitw
 
 ---
 
