@@ -139,8 +139,7 @@ These visuals represent only part of the full report — you can visit the Looke
 - Python (pandas, numpy, matplotlib, seaborn)  
 - Jupyter Notebook  
 - Looker Studio  
-- BigQuery  
-- Git & GitHub  
+- BigQuery    
 - Virtual Environment (venv)
 
 ---
@@ -260,8 +259,7 @@ Tüm hesaplamalar Looker Studio formülleri ve BigQuery üzerinde yapılmıştı
 - Python  
 - Jupyter Notebook  
 - Looker Studio  
-- BigQuery  
-- Git & GitHub  
+- BigQuery   
 - venv
 
 ---
