@@ -1,5 +1,17 @@
 # 📘 **F1 Data Analysis Project**
 
+## Portfolio context and project links
+
+This is a team project presented in Hasan Emre İlhan's data analysis portfolio. The original team repository is maintained at [gunay-ozsoy/F1_Data_Analysis_Project](https://github.com/gunay-ozsoy/F1_Data_Analysis_Project). The notebooks and dashboard are team assets; this portfolio presentation does not assign sole authorship of every file to one contributor.
+
+- [Source dataset — Rohan Rao, Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
+- [Dashboard preview](./formula1_page_1.png)
+- [Live Looker Studio report](https://datastudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_0cosqdqzxd?s=uG-Xa6VAitw) — currently requires data-source repair.
+
+The Git repository contains 14 raw and 14 processed CSV files. The live report's connection error is separate from these files: it references the BigQuery object `formula-1-analysis-477207.kpi.v_summary_base`, which was not found by the report's query in location `EU`. Forking this repository preserves the code and data history; it does not copy the BigQuery resources or change the report's permissions.
+
+See [dashboard recovery instructions](./docs/DASHBOARD_RECOVERY.md) for the verified error and the steps needed to restore the connection. The original project documentation follows below.
+
 ---
 
 # 🇬🇧 **F1 Data Analysis Project**
