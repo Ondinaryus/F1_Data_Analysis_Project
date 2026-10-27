@@ -1,0 +1,53 @@
+{
+  "source_commit": "7e0fc6dbecba19e0a95f9f85c1cbd493821f3788",
+  "source_repository": "gunay-ozsoy/F1_Data_Analysis_Project",
+  "sources": {
+    "data/raw/Race_Results.csv": {
+      "rows": 26519,
+      "sha256": "3667c4c41a0c254dffe056fa4887044c46803093c46bf93fed00347b71d1ef79"
+    },
+    "data/raw/Race_Schedule.csv": {
+      "rows": 1125,
+      "sha256": "4839d035abc603fa88fa08fa976a86d76cff35f3e94cb767d25f735a5a3376ef"
+    },
+    "data/raw/Driver_Details.csv": {
+      "rows": 859,
+      "sha256": "9cea7b495168cedc7ad078a80784957dd90d32666f1f18cce55010731a549686"
+    },
+    "data/raw/Team_Details.csv": {
+      "rows": 212,
+      "sha256": "ae423f6f2d6cd74d5cd594eac0bdec7e1e9be2cda3097eb69f870294a225618c"
+    },
+    "data/raw/Track_Information.csv": {
+      "rows": 77,
+      "sha256": "8a2ac67a0946ac238ddeaa4a212a1f3969f0108527b0213e7a38b3a5c3cba6eb"
+    }
+  },
+  "fields": [
+    "year",
+    "raceId",
+    "grand_prix",
+    "date",
+    "wiki_url",
+    "driverId",
+    "driverref",
+    "constructorId",
+    "team_name",
+    "win_flag",
+    "country",
+    "circuit_location",
+    "circuit_ref",
+    "circuitid"
+  ],
+  "rows": 26519,
+  "races": 1113,
+  "drivers": 859,
+  "winner_rows": 1116,
+  "min_year": 1950,
+  "max_year": 2024,
+  "last_race_date": "2024-07-07",
+  "query_bytes": 473063,
+  "query_sha256": "a3e0ca05b3c2e29cc4d67f7011415a54f87c281b8590c0dd88e39c72e72c6c8e",
+  "status": "locally_validated_snapshot_pending_live_report_validation",
+  "limitation": "Reconstructed summary only; original view SQL and other KPI definitions are not recovered."
+}

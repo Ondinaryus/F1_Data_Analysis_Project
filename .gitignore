@@ -179,3 +179,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Reproducible outputs from scripts/recover_summary.py
+/data/recovery/v_summary_base.csv
+/sql/recovery_v_summary_base.sql

@@ -8,7 +8,7 @@ The public Looker Studio report displays a dataset configuration error. Its deta
 Not found: Table formula-1-analysis-477207:kpi.v_summary_base was not found in location EU
 ```
 
-The repository has 14 CSV files under `data/raw/` and 14 under `data/processed/`. They are Git data files, not Git LFS pointers. The current repository tree and notebook source cells do not contain a definition of `v_summary_base`.
+The upstream snapshot has 14 CSV files under `data/raw/` and 14 under `data/processed/`. They are Git data files, not Git LFS pointers. Its tree and notebook source cells do not contain the original SQL definition of `v_summary_base`. A documented summary reconstruction is available below.
 
 The observed error does not establish that the object was deleted. The object name, dataset location, existence and access must be checked in the Google Cloud project. A GitHub fork does not restore a cloud view, copy its dataset or grant access to the report.
 
@@ -61,6 +61,29 @@ Embedded data sources can be edited by report editors. Reusable data sources req
 - Open the shared link in a separate viewer session and verify that charts load under the intended sharing and credentials configuration.
 
 Until this passes, use the repository and dataset links in the CV and label the existing screenshot as a preview.
+
+## Account-level checks and summary reconstruction
+
+The signed-in connector listed the F1 project and the `kpi`, `formula1_dataset`, `revize` and `staging` datasets. Each dataset's table picker returned no available tables. A direct query to the old summary view returned **Entity not found**, while `SELECT 1 AS connection_test` successfully reached the connection-change preview. The control query was cancelled rather than applied. These checks show that the query connection can operate; they do not establish whether the old objects were deleted, expired, moved, or hidden by resource permissions.
+
+The saved report copy contains 11 pages, 20 named BigQuery data sources and one unknown reusable source used by two variables. Reconnecting the summary alone will not restore every page. Preserve the other KPI definitions until their calculations can be recovered.
+
+The [recovery script](../scripts/recover_summary.py) rebuilds the observed summary contract from the original CSV revision. Run from the repository root with Python 3.8 or later:
+
+```sh
+python -m unittest discover -s tests -v
+python scripts/recover_summary.py --ref 7e0fc6dbecba19e0a95f9f85c1cbd493821f3788
+```
+
+This generates `data/recovery/v_summary_base.csv` and `sql/recovery_v_summary_base.sql`. The generated SELECT embeds a fixed upstream snapshot and needs no stored BigQuery tables. It does not create views, load data, change billing or recover the missing original SQL. The [manifest](../data/recovery/summary_manifest.json) records source hashes, the source commit and snapshot coverage.
+
+Local validation produced **26,519 result rows across 1,113 races**, covering **1950 through 7 July 2024**. All rows matched an independent set of pandas joins. `win_flag` explicitly means `positionOrder = 1`; its 1,116 flagged rows include the shared-car winners in three historical races, so result grain is preserved. The five unit tests cover row mapping, missing references, duplicate dimension keys, unsafe literal delimiters and query size.
+
+The recovered field contract is: `year`, `raceId`, `grand_prix`, `date`, `wiki_url`, `driverId`, `driverref`, `constructorId`, `team_name`, `win_flag`, `country`, `circuit_location`, `circuit_ref`, `circuitid`.
+
+To validate in the repair copy, edit the embedded summary source, choose BigQuery **Custom Query**, select the existing F1 project and paste the generated SELECT. Review the connection-change preview: names and types must match the existing fields. Apply only after checking the preview, then test chart totals and filters against the manifest. The snapshot contains historical data, not a live update feed.
+
+**Status: local reconstruction validated; live query execution and report charts still pending.** Do not present the repair copy as a working dashboard until that validation passes. Other KPI sources, including GOAT scores, are not recreated with guessed formulas.
 
 ## Official references
 
