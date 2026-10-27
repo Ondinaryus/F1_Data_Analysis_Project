@@ -1,0 +1,1487 @@
+[
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "carAdjustedScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "championshipScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "consistencyScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverName",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "driverRef",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "eraScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "GOAT_PUAN",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "longevityScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "multiTeamScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "successScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "teammateDominanceScore",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "GOAT_KPI"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "avg_pit_s",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorRef",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "driverId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverRef",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fastest_pit_s",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "iqr_pit_s",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "median_pit_s",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "pit_count",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "race_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "sd_pit_s",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year_circuit",
+        "type": "type_text"
+      },
+      {
+        "kind": "calculated",
+        "name": "Max avg pit (s)",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "Median avg pit (s)",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "Min avg pit (s)",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "P25 avg pit (s)",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "P75 avg pit (s)",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "kpi_pit_driver_team"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "constructorid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "nationality",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "url",
+        "type": "type_link"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "team_details"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "constructor_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "final_goat_score",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "reliability_score_100",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "total_constructor_championships",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "total_driver_championships",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "total_podiums",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "total_poles",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "total_wins",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "win_percentage_100",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "constructor_goat_scores"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "circuitid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "circuitRef",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "date",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "fp1_date",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fp1_time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fp2_date",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fp2_time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fp3_date",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fp3_time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "quali_date",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "quali_time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "round",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "sprint_date",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "sprint_time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "url",
+        "type": "type_link"
+      },
+      {
+        "kind": "physical",
+        "name": "year",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year_circuit",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "stg_race_schedule"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "circuitId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "circuitRef",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "driverId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "grand_prix",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "grid_position",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "win_flag",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "starts",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "win_rate_pct",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "wins",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "v_grid_start_facts"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "avg_finish",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "avg_points_when_scoring",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "avg_race_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "consistency_score",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "dominance_index",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "Domination",
+        "type": "type_text"
+      },
+      {
+        "kind": "calculated",
+        "name": "Duration",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "end_year",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "finish_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "max_points_race",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "podium_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "rank",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "scoring_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "season_start_date",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "season_wins",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "season_year",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "start_year",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "team_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "total_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "yıllar",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "constructor_summary_year_date"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "driverid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "lap",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "lap_time_formatted",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "lap_time_seconds",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "lap_timestamp",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "race_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "race_start_ts",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "raceid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "v_lap_chart_from_stg"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "alt",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "circuitid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "circuitref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "country",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "lat",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "lng",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "location",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "url",
+        "type": "type_link"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "track_information"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "championship_position",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "race_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "race_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "race_round",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "team_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "team_nationality",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "total_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "total_wins",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year_circuit",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "stg_constructor_rankings"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "driverId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fastestLap",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "fastestLapSpeed",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "grid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "laps",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "milliseconds",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "position",
+        "type": "type_text"
+      },
+      {
+        "kind": "calculated",
+        "name": "position_num",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "position_num1",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "positionOrder",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "race_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "resultId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "seconds",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "status",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "statusId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "time",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "Result_Label",
+        "type": "type_text"
+      },
+      {
+        "kind": "calculated",
+        "name": "Team Position",
+        "type": "type_text"
+      },
+      {
+        "kind": "calculated",
+        "name": "Team_Position",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "stg_race_result"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorResultsId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "race_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "stg_constructor_performance"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "excitement_score",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_chaos",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_density",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_dnf",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_surprise",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "season_start_date",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "year_circuit",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "sprint_heycan_score_v2"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "excitement_score",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_chaos",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_density",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_dnf",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "norm_surprise",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year_circuit",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "sprint_heycan_score_v2_no_indy"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "Altitude",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Altitude_Category",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Avg_Track_Speed",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Circuit_Name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Country",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Location",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Map_Location_Text",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Track_Type",
+        "type": "type_text"
+      },
+      {
+        "kind": "calculated",
+        "name": "Track_Type_Code",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Track_Volatility_Score",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "circuit_dna"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "circuitId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "circuitRef",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "disqualified_count",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "dnf_human",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "dnf_vehicle",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "dnfs",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "finishes",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "grand_prix",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "starts",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "v_dnf_by_circuit_year_reason"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "avg_finish",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "avg_points_when_scoring",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "avg_race_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "consistency_score",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "contribution_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "dominance_index",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driver_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "driver_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "calculated",
+        "name": "Dynamic Key",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "finish_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "max_points_race",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "podium_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "rank",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "scoring_rate",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "season_wins",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "season_year",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "team_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "total_points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "parameter",
+        "name": "view_mode",
+        "type": "type_text"
+      }
+    ],
+    "source": "constructor_summary_extended"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "circuit_location",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "circuit_ref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "circuitid",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "constructorId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "country",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "date",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "driverId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "grand_prix",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "team_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "wiki_url",
+        "type": "type_link"
+      },
+      {
+        "kind": "physical",
+        "name": "win_flag",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "year",
+        "type": "type_datetime"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "v_summary_base"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "driverId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "driverref",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "driverStandingsId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "points",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "position",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "race_name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "wins",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "stg_driver_rankings"
+  },
+  {
+    "fields": [
+      {
+        "kind": "physical",
+        "name": "Driver_A",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Driver_A_Code",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Driver_B",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Driver_B_Code",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Finish_A",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Finish_B",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Grid_A",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Grid_B",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Grid_Gap",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Points_A",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Points_B",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Points_Diff",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Points_Share_Pct",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Quali_Win_Flag",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Race_Gap",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Race_Name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "Race_Win_Flag",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "raceId",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "round",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Team_Name",
+        "type": "type_text"
+      },
+      {
+        "kind": "physical",
+        "name": "year",
+        "type": "type_numeric"
+      },
+      {
+        "kind": "physical",
+        "name": "Record Count",
+        "type": "type_numeric"
+      }
+    ],
+    "source": "team_battle_table"
+  }
+]

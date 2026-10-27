@@ -4,13 +4,17 @@
 
 This is a team project presented in Hasan Emre İlhan's data analysis portfolio. The original team repository is maintained at [gunay-ozsoy/F1_Data_Analysis_Project](https://github.com/gunay-ozsoy/F1_Data_Analysis_Project). The notebooks and dashboard are team assets; this portfolio presentation does not assign sole authorship of every file to one contributor.
 
+The recovery now rebuilds **all 20 named report sources** from a pinned upstream snapshot, covering recorded results through **7 July 2024**. Core data, season/career metrics, and timing/circuit metrics have independent review and 24 passing unit tests. The new indices are documented reconstructions and exploratory proxies; the original SQL formulas were unavailable.
+
+**The dashboard remains partially recovered.** Four sources are connected in the owner's repair copy; 16 await migration. All 11 pages, filters, defaults, navigation and public viewer access still require validation. The overview map now shows circuit markers from exact coordinates. CSV connector permission is pending. A complete local model does not certify a working live dashboard. Use the repository and dataset links for a CV until all 11 pages pass viewer checks.
+
+- [Rebuild instructions and methodology](./docs/RECOVERY_METHODOLOGY.md)
+- [Observed dashboard status and remaining checks](./docs/DASHBOARD_RECOVERY.md)
+- [Generated and live validation checkpoint](./data/recovery/report_validation.json)
 - [Source dataset — Rohan Rao, Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
-- [Dashboard preview](./formula1_page_1.png)
-- [Live Looker Studio report](https://datastudio.google.com/reporting/790f1100-ab2f-45bd-bd97-7407dc92de00/page/p_0cosqdqzxd?s=uG-Xa6VAitw) — currently requires data-source repair.
+- [Historical dashboard preview](./formula1_page_1.png)
 
-The Git repository contains 14 raw and 14 processed CSV files. The live report's connection error is separate from these files: it references the BigQuery object `formula-1-analysis-477207.kpi.v_summary_base`, which was not found by the report's query in location `EU`. Forking this repository preserves the code and data history; it does not copy the BigQuery resources or change the report's permissions.
-
-See [dashboard recovery instructions](./docs/DASHBOARD_RECOVERY.md) for the verified error and the steps needed to restore the connection. The original project documentation follows below.
+The original project documentation follows unchanged below, including its historical dashboard links. Its prediction narrative and example have **not been revalidated** by this recovery. The screenshot is a preview, not proof of current live functionality.
 
 ---
 

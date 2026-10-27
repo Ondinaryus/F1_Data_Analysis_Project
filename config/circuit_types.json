@@ -1,0 +1,618 @@
+[
+  {
+    "circuitId": 1,
+    "circuitRef": "albert_park",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 2,
+    "circuitRef": "sepang",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 3,
+    "circuitRef": "bahrain",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 4,
+    "circuitRef": "catalunya",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 5,
+    "circuitRef": "istanbul",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 6,
+    "circuitRef": "monaco",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 7,
+    "circuitRef": "villeneuve",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 8,
+    "circuitRef": "magny_cours",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 9,
+    "circuitRef": "silverstone",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 10,
+    "circuitRef": "hockenheimring",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 11,
+    "circuitRef": "hungaroring",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 12,
+    "circuitRef": "valencia",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 13,
+    "circuitRef": "spa",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 14,
+    "circuitRef": "monza",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 15,
+    "circuitRef": "marina_bay",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 16,
+    "circuitRef": "fuji",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 17,
+    "circuitRef": "shanghai",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 18,
+    "circuitRef": "interlagos",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 19,
+    "circuitRef": "indianapolis",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 20,
+    "circuitRef": "nurburgring",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 21,
+    "circuitRef": "imola",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 22,
+    "circuitRef": "suzuka",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 80,
+    "circuitRef": "vegas",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 24,
+    "circuitRef": "yas_marina",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 25,
+    "circuitRef": "galvez",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 26,
+    "circuitRef": "jerez",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 27,
+    "circuitRef": "estoril",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 28,
+    "circuitRef": "okayama",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification. Table uses former F1-era name TI Circuit Aida.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 29,
+    "circuitRef": "adelaide",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 30,
+    "circuitRef": "kyalami",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 31,
+    "circuitRef": "donington",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 32,
+    "circuitRef": "rodriguez",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 33,
+    "circuitRef": "phoenix",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 34,
+    "circuitRef": "ricard",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 35,
+    "circuitRef": "yeongam",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 36,
+    "circuitRef": "jacarepagua",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 37,
+    "circuitRef": "detroit",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 38,
+    "circuitRef": "brands_hatch",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 39,
+    "circuitRef": "zandvoort",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 40,
+    "circuitRef": "zolder",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 41,
+    "circuitRef": "dijon",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 42,
+    "circuitRef": "dallas",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 43,
+    "circuitRef": "long_beach",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 44,
+    "circuitRef": "las_vegas",
+    "type": "Unknown",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Raw ID 44 has a modern Las Vegas name, URL and coordinates, while ID 80 also identifies the Strip. The consolidated table distinguishes Caesars Palace from the Strip; this raw row cannot be matched unambiguously without race-history evidence.",
+    "confidence": "low"
+  },
+  {
+    "circuitId": 45,
+    "circuitRef": "jarama",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 46,
+    "circuitRef": "watkins_glen",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 47,
+    "circuitRef": "anderstorp",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 48,
+    "circuitRef": "mosport",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 49,
+    "circuitRef": "montjuic",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 50,
+    "circuitRef": "nivelles",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 51,
+    "circuitRef": "charade",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 52,
+    "circuitRef": "tremblant",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 53,
+    "circuitRef": "essarts",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 54,
+    "circuitRef": "lemans",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification. Raw URL explicitly identifies Bugatti Circuit, matching the table entry.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 55,
+    "circuitRef": "reims",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 56,
+    "circuitRef": "george",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 57,
+    "circuitRef": "zeltweg",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 58,
+    "circuitRef": "aintree",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 59,
+    "circuitRef": "boavista",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 60,
+    "circuitRef": "riverside",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 61,
+    "circuitRef": "avus",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 62,
+    "circuitRef": "monsanto",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 63,
+    "circuitRef": "sebring",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 64,
+    "circuitRef": "ain-diab",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 65,
+    "circuitRef": "pescara",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 66,
+    "circuitRef": "bremgarten",
+    "type": "Road circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 67,
+    "circuitRef": "pedralbes",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 68,
+    "circuitRef": "buddh",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 69,
+    "circuitRef": "americas",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 70,
+    "circuitRef": "red_bull_ring",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 71,
+    "circuitRef": "sochi",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 73,
+    "circuitRef": "baku",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 75,
+    "circuitRef": "portimao",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 76,
+    "circuitRef": "mugello",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 77,
+    "circuitRef": "jeddah",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 78,
+    "circuitRef": "losail",
+    "type": "Race circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification. Table uses Lusail spelling.",
+    "confidence": "high"
+  },
+  {
+    "circuitId": 79,
+    "circuitRef": "miami",
+    "type": "Street circuit",
+    "source_url": "https://en.wikipedia.org/w/index.php?title=List_of_Formula_One_circuits&oldid=1382072873",
+    "note": "Consolidated table category for most recent F1 configuration; not a year-specific classification.",
+    "confidence": "high"
+  }
+]

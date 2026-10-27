@@ -1,0 +1,159 @@
+{
+  "checkpoint": "full_20_source_reconstruction",
+  "generated_model": {
+    "status": "generated_and_locally_validated",
+    "source_count": 20,
+    "source_manifest": "full_source_manifest.json",
+    "source_commit": "7e0fc6dbecba19e0a95f9f85c1cbd493821f3788",
+    "coverage": {
+      "result_rows": 26519,
+      "races": 1113,
+      "drivers": 859,
+      "first_date": "1950-05-13",
+      "last_date": "2024-07-07",
+      "outcomes": {
+        "finish": 14951,
+        "vehicle": 6519,
+        "incident": 2826,
+        "nonstart": 1588,
+        "other": 481,
+        "disqualified": 154
+      }
+    },
+    "independent_review": {
+      "core": "approved",
+      "season": "approved",
+      "timing": "approved"
+    },
+    "unit_tests": {
+      "status": "passed",
+      "tests": 24,
+      "scope": "Previously completed model validation; not a live report test"
+    },
+    "original_sql_recovered": false,
+    "indices": "Reconstructed exploratory indices and proxies; not original formulas or objective talent measures",
+    "live_report_certified_by_generation": false
+  },
+  "observed_live": {
+    "status": "partial_recovery",
+    "scope": "Owner repair copy",
+    "report_id": "39dad2ce-81db-4aed-be5c-96dfafa904e8",
+    "report_title": "Formula 1 | Race & Performance Analysis",
+    "connection_method": "Authorized BigQuery fixed-snapshot SELECTs",
+    "named_sources_total": 20,
+    "named_sources_connected": 4,
+    "connections": {
+      "v_summary_base": {
+        "status": "applied",
+        "rows": 26519
+      },
+      "track_information": {
+        "status": "applied",
+        "rows": 77
+      },
+      "stg_race_schedule": {
+        "status": "applied",
+        "rows": 1113,
+        "fields": 20,
+        "field_changes": {
+          "type_changed": [
+            "quali_date"
+          ]
+        }
+      },
+      "v_dnf_by_circuit_year_reason": {
+        "status": "applied",
+        "rows": 1113,
+        "fields": 13,
+        "field_changes": {
+          "added": [
+            "dnf_other",
+            "nonstart_count"
+          ]
+        }
+      }
+    },
+    "overview_observed": {
+      "seasons": 75,
+      "constructors": 211,
+      "drivers": 859,
+      "countries": 35,
+      "grand_prix_names": 54,
+      "race_scorecard_display": "1.1K",
+      "underlying_distinct_races": 1113
+    },
+    "constructor_wins": {
+      "aggregation": "Conditional COUNT_DISTINCT of raceId when win_flag = 1",
+      "Ferrari": 245,
+      "McLaren": 180,
+      "Mercedes": 127
+    },
+    "dnf_chart": {
+      "series": [
+        "Vehicle",
+        "Incident/health",
+        "Other"
+      ],
+      "excluded": [
+        "Disqualified",
+        "Nonstarts"
+      ],
+      "display": "Numeric table; 10 rows per page"
+    },
+    "map": {
+      "exact_coordinate_chart_calculation_connected": true,
+      "race_count_connected": true,
+      "markers_visibly_verified": true,
+      "visualization": "Native Geo chart with exact latitude-longitude calculated field"
+    },
+    "remaining_named_sources_not_migrated": [
+      "team_details",
+      "v_grid_start_facts",
+      "stg_race_result",
+      "stg_constructor_performance",
+      "stg_constructor_rankings",
+      "stg_driver_rankings",
+      "constructor_summary_year_date",
+      "constructor_summary_extended",
+      "GOAT_KPI",
+      "constructor_goat_scores",
+      "team_battle_table",
+      "kpi_pit_driver_team",
+      "v_lap_chart_from_stg",
+      "sprint_heycan_score_v2",
+      "sprint_heycan_score_v2_no_indy",
+      "circuit_dna"
+    ],
+    "csv_connector": {
+      "status": "permission_pending",
+      "uploads_completed": false
+    },
+    "verification_pending": {
+      "all_11_pages": true,
+      "filters": true,
+      "defaults": true,
+      "navigation": true,
+      "user_experience": true,
+      "public_viewer": true
+    },
+    "fully_restored": false,
+    "cv_live_link_ready": false,
+    "last_observed_at_utc": "2026-10-27T23:10:47.723383+00:00",
+    "navigation_settings": {
+      "type": "Top left",
+      "header": "Always show",
+      "viewer_pages_observed": 9,
+      "additional_hidden_pages": 2,
+      "all_11_verified": false
+    }
+  },
+  "original_definition_search": {
+    "original_20_source_sql_available": false,
+    "retained_history_region": "EU",
+    "retained_history_days": 180,
+    "matching_definition_jobs": 0,
+    "raw_notebooks_contain_original_sql": false,
+    "older_or_external_definitions_ruled_out": false
+  },
+  "historical_record": "live_validation.json is an earlier partial checkpoint; use this record for current status"
+}
