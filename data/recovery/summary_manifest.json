@@ -48,6 +48,6 @@
   "last_race_date": "2024-07-07",
   "query_bytes": 473063,
   "query_sha256": "a3e0ca05b3c2e29cc4d67f7011415a54f87c281b8590c0dd88e39c72e72c6c8e",
-  "status": "locally_validated_snapshot_pending_live_report_validation",
+  "status": "locally_validated_snapshot",
   "limitation": "Reconstructed summary only; original view SQL and other KPI definitions are not recovered."
 }

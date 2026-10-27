@@ -1,0 +1,20 @@
+{
+  "source_commit": "7e0fc6dbecba19e0a95f9f85c1cbd493821f3788",
+  "source_file": "data/raw/Track_Information.csv",
+  "source_sha256": "8a2ac67a0946ac238ddeaa4a212a1f3969f0108527b0213e7a38b3a5c3cba6eb",
+  "rows": 77,
+  "fields": [
+    "circuitid",
+    "circuitref",
+    "name",
+    "location",
+    "country",
+    "lat",
+    "lng",
+    "alt",
+    "url"
+  ],
+  "query_bytes": 9875,
+  "query_sha256": "ba7928b33c893369b0d5297a8dea80698e4432992f58722c820f73bfeb0c5f2e",
+  "status": "exact_raw_snapshot_locally_validated"
+}

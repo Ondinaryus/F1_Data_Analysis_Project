@@ -154,7 +154,7 @@ def main():
                 'min_year': min(r['year'] for r in rows), 'max_year': max(r['year'] for r in rows),
                 'last_race_date': max(r['date'] for r in rows), 'query_bytes': len(sql.encode('utf-8')),
                 'query_sha256': hashlib.sha256(sql.encode('utf-8')).hexdigest(),
-                'status': 'locally_validated_snapshot_pending_live_report_validation',
+                'status': 'locally_validated_snapshot',
                 'limitation': 'Reconstructed summary only; original view SQL and other KPI definitions are not recovered.'}
     (data_dir / 'summary_manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: manifest[k] for k in ['rows', 'races', 'drivers', 'winner_rows', 'min_year',

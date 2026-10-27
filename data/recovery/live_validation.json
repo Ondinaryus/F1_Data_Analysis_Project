@@ -1,0 +1,58 @@
+{
+  "validation_date": "2026-10-27",
+  "status": "partial_report_recovery",
+  "scope": "Owner's repair copy; original report unchanged",
+  "summary": {
+    "query_sha256": "a3e0ca05b3c2e29cc4d67f7011415a54f87c281b8590c0dd88e39c72e72c6c8e",
+    "connection_applied": true,
+    "added_or_removed_fields": [],
+    "driverref_semantic_type": "Text",
+    "overview_observed": {
+      "seasons": 75,
+      "constructors": 211,
+      "drivers": 859,
+      "countries": 35,
+      "grand_prix_names": 54,
+      "race_scorecard_display": "1.1K",
+      "ferrari_win_rows": 246,
+      "mclaren_win_rows": 180,
+      "mercedes_win_rows": 127
+    },
+    "year_2024_observed_and_matched": {
+      "races": 12,
+      "drivers": 21,
+      "constructors": 10,
+      "countries": 12,
+      "grand_prix_names": 12,
+      "red_bull_win_rows": 7,
+      "mercedes_win_rows": 2,
+      "ferrari_win_rows": 2,
+      "mclaren_win_rows": 1
+    },
+    "filter_cleared_after_validation": true
+  },
+  "track_information": {
+    "query_sha256": "ba7928b33c893369b0d5297a8dea80698e4432992f58722c820f73bfeb0c5f2e",
+    "connection_applied": true,
+    "field_changes": false,
+    "live_preview_rows": 77,
+    "sample_coordinates": {
+      "Albert Park Grand Prix Circuit": [-37.8497, 144.968],
+      "Istanbul Park": [40.9517, 29.405]
+    }
+  },
+  "unresolved": {
+    "race_schedule_preview": {
+      "applied": false,
+      "draft_discarded": true,
+      "missing_fields": ["year_circuit", "circuitRef"],
+      "changed_fields": ["fp1_date", "fp2_date", "fp3_date", "quali_date", "sprint_date"]
+    },
+    "dnf_classification_definitions": ["dnf_human", "dnf_vehicle"],
+    "map_markers_validated": false,
+    "all_report_pages_validated": false,
+    "all_filters_validated": false,
+    "public_viewer_access_validated": false,
+    "other_original_kpi_sql_recovered": false
+  }
+}

@@ -83,7 +83,28 @@ The recovered field contract is: `year`, `raceId`, `grand_prix`, `date`, `wiki_u
 
 To validate in the repair copy, edit the embedded summary source, choose BigQuery **Custom Query**, select the existing F1 project and paste the generated SELECT. Review the connection-change preview: names and types must match the existing fields. Apply only after checking the preview, then test chart totals and filters against the manifest. The snapshot contains historical data, not a live update feed.
 
-**Status: local reconstruction validated; live query execution and report charts still pending.** Do not present the repair copy as a working dashboard until that validation passes. Other KPI sources, including GOAT scores, are not recreated with guessed formulas.
+## Live validation on 27 October 2026
+
+**Status: partial recovery.** The summary query was applied to the owner's repair copy after checking the connection-change preview. No summary fields were added or removed. The `driverref` semantic type was explicitly corrected from City to Text. Overview indicators, team wins and Grand Prix counts now return data. This validates the reconstructed snapshot, not the missing view's original business logic.
+
+| Overview check | Observed value | Independent snapshot value |
+| --- | --- | --- |
+| Seasons | 75 | 75 |
+| Constructors with results | 211 | 211 |
+| Drivers | 859 | 859 |
+| Countries | 35 | 35 |
+| Grand Prix names | 54 | 54 |
+| Ferrari / McLaren / Mercedes win rows | 246 / 180 / 127 | 246 / 180 / 127 |
+
+The race scorecard displays the rounded value **1.1K**; the independently validated snapshot contains **1,113 distinct races**. Filtering to 2024 returned **12 races, 21 drivers, 10 constructors, 12 countries and 12 Grand Prix names**, matching the source snapshot through 7 July 2024. The filter was then cleared.
+
+The [track query](../sql/recovery_track_information.sql) preserves all **77 raw track rows** and the nine observed source fields. Its [manifest](../data/recovery/track_information_manifest.json) records the source and query hashes. Reconnection reported **No field changes**. A live data preview returned **77 rows**, including Albert Park at `-37.8497, 144.968` and Istanbul Park at `40.9517, 29.405`.
+
+The map also depends on `stg_race_schedule`. A preview using its 18 original CSV columns reported missing `year_circuit` and `circuitRef` fields, plus five changed practice/qualifying/sprint date fields. That preview and its unsaved connection draft were discarded; the schedule source was not replaced. Restoring track data alone does not establish that map markers work.
+
+The DNF source requires `dnf_human` and `dnf_vehicle` classifications whose original SQL was not found. Other custom sources, including GOAT scores and constructor summaries, also retain unresolved definitions. The report's 11 pages and all filters have not passed end-to-end validation, and public viewer access has not been verified. Keep using the repository and dataset links in the CV until the complete dashboard passes those checks.
+
+The [live validation record](../data/recovery/live_validation.json) is separate from generated snapshot manifests: generating a SQL file performs local checks and does not execute it against Google or certify a live report.
 
 ## Official references
 
