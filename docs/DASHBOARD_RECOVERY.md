@@ -66,7 +66,7 @@ Until this passes, use the repository and dataset links in the CV and label the 
 
 The signed-in connector listed the F1 project and the `kpi`, `formula1_dataset`, `revize` and `staging` datasets. Each dataset's table picker returned no available tables. A direct query to the old summary view returned **Entity not found**, while `SELECT 1 AS connection_test` successfully reached the connection-change preview. The control query was cancelled rather than applied. These checks show that the query connection can operate; they do not establish whether the old objects were deleted, expired, moved, or hidden by resource permissions.
 
-The saved report copy contains 11 pages, 20 named BigQuery data sources and one unknown reusable source used by two variables. Reconnecting the summary alone will not restore every page. Preserve the other KPI definitions until their calculations can be recovered.
+The repair copy started with 11 pages, 20 named BigQuery data sources and one unknown reusable source used by two variables. A separate, unused diagnostic source was later added for the history check below. Reconnecting the summary alone does not restore every page. Preserve the other KPI definitions until their calculations can be recovered.
 
 The [recovery script](../scripts/recover_summary.py) rebuilds the observed summary contract from the original CSV revision. Run from the repository root with Python 3.8 or later:
 
@@ -104,11 +104,14 @@ The map also depends on `stg_race_schedule`. A preview using its 18 original CSV
 
 The DNF source requires `dnf_human` and `dnf_vehicle` classifications whose original SQL was not found. Other custom sources, including GOAT scores and constructor summaries, also retain unresolved definitions. The report's 11 pages and all filters have not passed end-to-end validation, and public viewer access has not been verified. Keep using the repository and dataset links in the CV until the complete dashboard passes those checks.
 
+An additional read-only query checked the F1 project's EU `INFORMATION_SCHEMA.JOBS_BY_PROJECT` history. It searched successful CREATE/ALTER query jobs from the retained 180 days for the original report's source names. The live preview returned **0 matching definition jobs**. This does not rule out older queries or SQL saved elsewhere. The diagnostic source is named **F1 SQL History Check (Diagnostic)** and is used by no charts. Completing the original report requires saved SQL definitions or another authoritative backup from the project contributors.
+
 The [live validation record](../data/recovery/live_validation.json) is separate from generated snapshot manifests: generating a SQL file performs local checks and does not execute it against Google or certify a live report.
 
 ## Official references
 
 - [BigQuery VIEWS metadata and view_definition](https://docs.cloud.google.com/bigquery/docs/information-schema-views)
+- [BigQuery JOBS metadata and retained query history](https://docs.cloud.google.com/bigquery/docs/information-schema-jobs)
 - [BigQuery data and query locations](https://docs.cloud.google.com/bigquery/docs/locations)
 - [Edit or reconnect a Looker Studio data source](https://docs.cloud.google.com/data-studio/edit-the-data-source-connection)
 - [Looker Studio data credentials](https://docs.cloud.google.com/data-studio/data-credentials)

@@ -42,6 +42,17 @@
     }
   },
   "unresolved": {
+    "retained_definition_history": {
+      "project": "formula-1-analysis-477207",
+      "region": "EU",
+      "lookback_days": 180,
+      "successful_create_alter_jobs_only": true,
+      "scope": "Original F1 report source names",
+      "matching_definition_jobs": 0,
+      "diagnostic_source": "F1 SQL History Check (Diagnostic)",
+      "diagnostic_source_chart_count": 0,
+      "older_or_externally_saved_queries_ruled_out": false
+    },
     "race_schedule_preview": {
       "applied": false,
       "draft_discarded": true,
